@@ -3,7 +3,7 @@ on: [push]
 jobs:
   container-test-job:
     runs-on: self-hosted 
-    container: condaforge/miniforge3
+    container: gcr.io/my-org/my-image@sha256:a172..752f
     steps:
       - name: Check for python version 
         run: python --version 
